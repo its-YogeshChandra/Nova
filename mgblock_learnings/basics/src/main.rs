@@ -35,10 +35,21 @@ fn write_rwlock() {
 
 //what cfg does
 
+#[cfg(target_os = "windows")]
+fn os() {
+    println!("the os is : macos ")
+}
+
+#[cfg(target_os = "macos")]
+fn os() {
+    println!("the os is : macos ")
+}
+
 //what debug does
 
 fn main() {
     println!("Hello, world!");
     learn_rwlock();
     write_rwlock();
+    os();
 }
