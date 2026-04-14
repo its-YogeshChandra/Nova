@@ -15,3 +15,5 @@ fn main() {
     );
     println!("the list is : {:#?}", list);
 }
+
+//about the Deref trait
